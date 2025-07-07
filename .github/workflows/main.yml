@@ -1,4 +1,4 @@
-name: Generate Stats Images
+Cname: Generate Stats Images
 
 on:
   push:
@@ -41,7 +41,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         EXCLUDED: ${{ secrets.EXCLUDED }}
-        EXCLUDED_LANGS: "HTML"
+        EXCLUDED_LANGS: "HTML, Jupyter Notebook"
         EXCLUDE_FORKED_REPOS: true
 
     # Commit all changed files to the repository
