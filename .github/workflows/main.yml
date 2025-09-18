@@ -37,7 +37,7 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         EXCLUDED: ${{ secrets.EXCLUDED }}
-        EXCLUDED_LANGS: "HTML, Jupyter Notebook"
+        EXCLUDED_LANGS: "HTML, Jupyter Notebook, CMake, C++, Makefile, C"
         EXCLUDE_FORKED_REPOS: true
 
     - name: Commit to the repo
